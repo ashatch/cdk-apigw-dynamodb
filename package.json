@@ -1,0 +1,60 @@
+{
+  "name": "cdk-apigw-dynamodb",
+  "version": "0.1.0",
+  "description": "CDK to build an ApiGateway proxy for DynamoDB",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint . --fix --ext .ts",
+    "ci-lint": "eslint . --ext .ts",
+    "cdk": "cdk synth",
+    "test": "jest",
+    "test-infrastructure": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.0.0",
+    "@types/jest": "^24.0.13",
+    "@types/node": "8.10.40",
+    "@types/readline-sync": "^1.4.3",
+    "@types/source-map-support": "^0.5.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "aws-sdk": "^2.478.0",
+    "aws-sdk-typescript": "0.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "prettier": "^1.17.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-immutable": "^6.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "^1.0.0",
+    "@aws-cdk/aws-dynamodb": "^1.0.0",
+    "@aws-cdk/aws-apigateway": "^1.0.0",
+    "acorn": "^6.0.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "commander": "^2.20.0",
+    "figlet": "^1.2.3",
+    "loglevel": "^1.6.3",
+    "path": "^0.12.7",
+    "readline-sync": "^1.4.9",
+    "source-map-support": "^0.5.12"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "reporters": [
+      "default"
+    ],
+    "testRegex": ".*.spec.ts"
+  }
+}
