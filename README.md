@@ -9,6 +9,7 @@ to proxy AWS DynamoDB with AWS API Gateway.
 * Creates an AWS DynamoDB table
 * Creates an API Gateway
 * Maps a POST endpoint to proxy a PutItems request
+* Maps a GET endpoint to proxy a Query request
 
 > Note: the DynamoDB table is set to teardown with the stack
 
